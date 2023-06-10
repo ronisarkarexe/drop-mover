@@ -13,34 +13,39 @@
   align-items: center;
   justify-content: center;
 }
-.left-container h1,
-.right-container h1 {
-  margin: 30px;
-}
-
-.left-container #left, .right-container #right {
-  width: 400px;
-  min-height: 430px;
-  margin: 30px;
-}
 
 #left,
 #right {
-  width: 100%;
-  min-height: 100%;
+  width: 400px;
+  min-height: 500px;
+  margin: 20px;
   border: 2px solid rgb(197, 197, 255);
   background-color: aliceblue;
 }
 
-.list{
-    background-color: rgb(129, 240, 248);
-    height: 55px;
-    margin: 25px;
-    color: black;
-    display: flex;
+.list {
+  background-color: rgb(129, 240, 248);
+  height: 55px;
+  margin: 25px;
+  color: black;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 780px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    cursor: grab;
-    font-weight: 800;
-    font-size: 1.5rem;
-    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #left,
+  #right {
+    width: 300px;
+  }
 }
