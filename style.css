@@ -44,28 +44,3 @@
     font-size: 1.5rem;
     padding: 15px;
 }
-
-@media (max-width: 3760px) and (max-device-width : 480px) {
-  .container {
-    display: flow-root;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    min-height: 100wh;
-  }
-  .left-container h1,
-  .right-container h1 {
-    margin: 30px;
-  }
-  .left-container #left, .right-container #right {
-  width: 315px;
-  min-height: 400px;
-  margin: 30px;
-}
-  #left,
-  #right {
-    border: 2px solid rgb(197, 197, 255);
-    background-color: aliceblue;
-  }
-}
-
